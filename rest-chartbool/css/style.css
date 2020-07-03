@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  .dashboard {
+      height: 100vh;
+      min-width: calc(100% - 50px);
+      padding: 30px;
+      background-color: black;
+      margin: auto;
+  }
+
+  .container {
+      width: calc(50% - 3px);
+      height: 50%;
+      padding: 30px;
+      background-color: #232323;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  }
+
+  .container:nth-child(odd) {
+      margin-right: 5px;
+  }
+
+  .container:nth-last-child(n+3) {
+      margin-bottom: 5px;
+  }
+
+  .dashboard .container {
+      float: left;
+  }
+
+  .container.selectors select,.container.selectors input,.container.selectors button {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid black;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+  }
+
+  .container.selectors button {
+      color: white;
+      background-color: green;
+      text-transform: uppercase;
+      border: none;
+      font-weight: bold;
+      margin-top: 10px;
+  }
+
+  .container.selectors select,input[type=number] {
+      -webkit-appearance: none;
+      -moz-appearance: textfield;
+  }
+
+  @media screen and (max-width:768px) {
+      .dashboard .container {
+          float: none;
+      }
+
+      .container {
+          margin: auto;
+          width: 100%;
+      }
+
+      .dashboard {
+          height: 100%;
+      }
+  }

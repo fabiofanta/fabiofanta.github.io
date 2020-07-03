@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/931ad4d9a2.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Baloo+2|Roboto&display=swap" rel="stylesheet">
+        <title>Boolzap</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js" charset="utf-8"></script>
+        <script src="js/main.js" charset="utf-8"></script>
+    </head>
+    <body>
+        <div class="container-fullwidth">
+            <header>
+                <div class="header-container">
+                    <div class="logo"></div>
+                    <div class="search-bar">
+                        <input id="input-bar" placeholder="Search" type="" value="">
+                        <button id="input-button"type="button" name="button">Search</button>
+                    </div>
+                    <div class="selector-container">
+                        <select class="genre-selector movie">
+                            <option class="all-option" value="all" selected>All Movies</option>
+                            <option value="hide">Hide Movies</option>
+                        </select>
+                        <select class="genre-selector tv">
+                            <option class="all-option" value="all" selected>All TV-Shows</option>
+                            <option value="hide" >Hide TV-Shows</option>
+                        </select>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <div class="card-container movie">
+                    <div class="category-name">
+                        <span>Movies</span>
+                    </div>
+                    <div class="no-match-container">
+                        <span>There are no movies that matched your query.</span>
+                    </div>
+                </div>
+                <div class="card-container tv">
+                    <div class="category-name">
+                        <span>TV-series</span>
+                    </div>
+                    <div class="no-match-container">
+                        <span>There are no tv-shows that matched your query.</span>
+                    </div>
+                </div>
+            </div>
+            <footer></footer>
+        </div>
+
+        <script id="card-template" type="text/x-handlebars-template">
+            <div class="card" data-id="{{id}}" data-genre= "{{genreId}}">
+                <img src="{{poster}}"  alt="{{title}}">
+                <div class="card-description">
+                    <div class="title-container">
+                        <span class="highlight">Titolo:</span>
+                        <span id="main-title">{{title}}</span>
+                    </div>
+                    <div class="original-title-container">
+                        <span class="highlight">Titolo originale:</span>
+                        <span id="title">{{originTitle}}</span>
+                    </div>
+                    <div class="language">
+                        <span class="highlight">Lingua:&nbsp </span>
+                        <img src="https://www.countryflags.io/{{language}}/shiny/16.png" alt="{{language}}">
+                    </div>
+                    <div class="stars" data-vote="{{vote}}">
+                        <span class="highlight">Voto:&nbsp</span>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="overview-container">
+                        <span class="highlight">Overview:</span>
+                        <span class="over api-value">{{description}}</span>
+                    </div>
+                    <div class="cast-container">
+                    </div>
+                    <div class="genre-container">
+                    </div>
+                </div>
+            </div>
+
+        </script>
+        <script id="filter-template" type="text/x-handlebars-template">
+            <option data-genre= "{{genreId}}" value="{{genre}}">{{genre}}</option>
+        </script>
+
+
+    </body>
+</html>

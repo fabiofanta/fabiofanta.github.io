@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+      background-color: black;
+      font-family: 'Roboto', sans-serif;
+  }
+
+
+  .container-fullwidth {
+      min-height: 100%;
+  }
+
+  .container {
+      width: 85%;
+      margin: auto;
+  }
+
+  header {
+      position: sticky;
+      top: 0;
+      z-index: 4;
+      background-color: black;
+  }
+
+  .header-container {
+       width: 85%;
+       height: 100%;
+       margin: auto;
+       position: relative;
+  }
+
+  .logo {
+      background-image: url('../img/Boolflix-logo.png');
+      height: 80px;
+      display: inline-block;
+      width: 150px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  .search-bar{
+      float: right;
+      line-height: 5;
+  }
+
+  #input-bar {
+      height: 34px;
+      border: none;
+      border-bottom: 2px solid black;
+      border-radius: 5px;
+      padding: 10px 5px;
+      font-family: 'Baloo 2', cursive;
+      font-size: 16px;
+  }
+
+  #input-button {
+      height: 34px;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 2px;
+      background-color: #cf1717;
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+
+  }
+
+  .card-container {
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      clear: both;
+  }
+
+  .no-match-container {
+      height: 100%;
+      width: 100%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      color: white;
+  }
+
+  .category-name {
+      font-size: 30px;
+      height: 40px;
+      width: 100%;
+      color: white;
+      margin: 20px 0;
+      position: sticky;
+      top: 136px;
+      background-color: black;
+      z-index: 1;
+  }
+
+  .selector-container {
+      padding-bottom: 20px;
+  }
+
+  .genre-selector {
+      padding:5px;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      background-color: black;
+      color: white;
+      border: 1px solid grey;
+  }
+
+  .card {
+      width: 250px;
+      height: 400px;
+      position: relative;
+  }
+
+  .card:hover .card-description {
+      display: block;
+  }
+
+  .card img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      font-size: 16px;
+  }
+
+  .card-description {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      color: white;
+      background-color: black;
+      padding: 15px;
+      padding-bottom: 60px;
+      border: 1px solid white;
+      overflow-y:auto;
+      display: none;
+      scrollbar-width:none;
+  }
+
+  .card-description::-webkit-scrollbar {
+      display: none;
+  }
+
+  .card-description > div {
+      line-height: 1.2;
+      margin-bottom: 10px;
+  }
+
+  .card-description img {
+      width: 16px;
+      height: 16px;
+  }
+
+  .language {
+      display: flex;
+      align-items: center;
+  }
+
+  .stars {
+      display: flex;
+
+  }
+
+  .stars-yellow {
+      color: yellow;
+  }
+
+  .highlight {
+      font-weight: bold;
+      text-transform: capitalize;
+  }
+
+  .over {
+    font-size:14px;
+  }
+
+  .cast,.genre {
+      background-color: #cf1717;
+      border-radius: 5px;
+      padding: 0 5px;
+      font-size: 14px;
+      font-weight: normal;
+      cursor: pointer;
+  }
+
+  .cast:nth-last-child(n+2)::after, .genre:nth-last-child(n+2)::after {
+      content: ',';
+      position: relative;
+      left: 8px;
+  }
+
+  footer {
+      height: 100px;
+  }
+
+  .show {
+      display: flex;
+  }
+
+  .hide {
+      display: none;
+  }
+
+
+  @media  all and (max-width:706px) {
+      .card-container {
+          justify-content: center;
+      }
+  }
+
+  @media  all and (max-width:620px) {
+
+      .container-fullwidth {
+          margin: 5px;
+      }
+
+      .selector-container {
+          display: none;
+      }
+
+      .search-bar {
+          float: none;
+          line-height: normal;
+          height: 120px;
+          display: none;
+      }
+
+      .container,.header-container,.genre-selector,#input-bar,#input-button,.selector-container {
+          width: 100%;
+      }
+
+      .logo {
+          display: block;
+          margin:auto;
+      }
+
+      .logo:after {
+          content: "\f002";
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          font-size: 30px;
+          color: white;
+          position: absolute;
+          top: 25px;
+          left: 15px;
+          cursor: pointer;
+      }
+
+      .category-name {
+          text-align: center;
+          top: 80px;
+      }
+
+      .categoryMobile {
+          top: 284px;
+      }
+
+      .show-block {
+          display: block;
+      }
+
+  }
