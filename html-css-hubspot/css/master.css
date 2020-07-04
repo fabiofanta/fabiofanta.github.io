@@ -1,0 +1,557 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+      font-family: 'Lato', sans-serif;
+  }
+
+  p {
+      line-height: 1.5;
+  }
+
+  .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+
+  .capital-bold {
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 13px;
+      margin-bottom: 15px;
+      margin-top: 2em;
+  }
+  .images {
+      height: 150px;
+      width: 100%;
+  }
+
+  .container,.section {
+      width:1080px;
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  .fw-fixedbar,.fw-sectionhub,.fw-bizdata2 {
+      background-color: #f5f8fa;
+      border-bottom:1px solid lightgray;
+  }
+
+  .data-fixed {
+      height: 80px;
+  }
+
+  .fw-fixedbar {
+      position:fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+  }
+
+  .fixedbar {
+      height: 80px;
+      line-height: 5;
+  }
+
+  .fixedbar span {
+      color: #334787;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 15px;
+      line-height: 1;
+      padding-right: 45px;
+  }
+
+  .wicon:before {
+      content: url("https://cdn2.hubspot.net/hubfs/53/Logos/language-switcher-icon.svg");
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      vertical-align: text-top;
+      padding-left: 5px;
+      padding-right: 10px;
+  }
+
+  .slash {
+      border-left: 3px solid lightgray;
+      padding-left: 20px;
+  }
+
+  .fixedbar ul {
+      float: right;
+  }
+
+  .fas {
+      color: #00a4bd;
+      padding-right: 30px;
+  }
+
+  .top {
+      display: inline;
+  }
+
+  .login {
+      background-color: white;
+      color: #ff7a59;
+      border-radius: .1875rem;
+      font-size: 0.875rem;
+      border: 1px solid #ff7a59;
+      padding: 10px 18px;
+      margin-right: 10px;
+  }
+
+  .fixedbar li .high {
+      font-size: 14px;
+      font-weight: 400;
+      padding: 0.563rem 1rem;
+
+  }
+
+  .fw-navbar {
+      padding:20px;
+      background-color: #ffffff;
+  }
+
+  .container.navbar img {
+      float: left;
+  }
+
+  .container.navbar nav {
+      float: right;
+  }
+
+  li {
+      display: inline-block;
+      text-decoration: none;
+  }
+
+  nav ul li {
+      padding: 6px 16px;
+      font-weight: 600;
+      font-size: 16px;
+  }
+
+  .fw-infobar {
+      background-color: #425b76;
+  }
+
+  .container.infobar {
+      padding:20px;
+
+  }
+
+  .info-text {
+      float: left;
+      width: 910px;
+  }
+
+  .info-text p {
+      color: white;
+      font-size: 16px;
+      padding-right: 40px;
+      line-height: 1.5;
+  }
+
+  .info-cta a {
+      margin: 1px;
+      background-color: white;
+      padding: 12px 24px;
+      color: black;
+      border-radius: .1875rem;
+      float: left;
+      font-size: 0.875rem;
+      font-weight: 600;
+  }
+
+  a {
+      text-decoration: none;
+      display: inline-block;
+      border-radius: .1875rem;
+  }
+
+  img {
+      max-width: 100%;
+  }
+
+  .fw-jumbotron {
+      background-color: #FFF2EE;
+  }
+
+  .section.jumbotron {
+      padding: 64px 0;
+  }
+
+  .sj-text {
+      width: 481px;
+  }
+
+  .button.bt-orange {
+      background-color: #ff7a59;
+      color: white;
+  }
+
+  .section.jumbotron h1 {
+      font-size: 3.438rem;
+      line-height: 1.1818;
+      font-weight: 900;
+      text-align: left;
+      font-family: "Roboto", sans-serif;
+  }
+
+  .sj-text p {
+      margin: 20px 0;
+  }
+
+  .section.jumbotron a {
+      font-size: 1rem;
+      padding: 1.625rem 3rem;
+      font-weight: 600;
+  }
+
+  .microcopy {
+      width: 224px;
+      font-size: 0.75rem;
+  }
+
+  .fw-bottombar {
+      background-color: #afebe4;
+      height: 70px;
+      border: 1px solid black;
+  }
+
+  .fw-sectionhub{
+      background-color: #f5f8fa;
+  }
+
+  .box {
+      width: 1024px;
+      text-align: center;
+      padding: 100px 32px;
+  }
+
+  .sh-claim img {
+      max-width: 260px;
+  }
+
+  .shc-top {
+      width: 800px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+  }
+
+  .shc-top h2 {
+      padding-bottom: 20px;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.3125;
+  }
+
+  .s-top {
+      background-color: white;
+      padding: 32px 0;
+       margin-bottom: 25px;
+  }
+
+  .crm-cta {
+      float: left;
+      padding: 0 80px;
+  }
+
+  .crmc-button {
+      padding-top: 24px;
+  }
+
+  .medium {
+      font-size: 0.857rem;
+      padding: 0.75rem 1.5rem;
+      font-weight: 600;
+  }
+
+  .top-section-text {
+      float: left;
+      text-align: left;
+      width: 509px;
+  }
+
+  .top-section-text h4 {
+      padding-bottom: 10px;
+  }
+
+  .pop-features.capital-bold {
+      padding-top: 20px;
+      border-top: 1px solid lightgray;
+  }
+
+ .list ul li::before {
+     content: "";
+     background: url("https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/partners/images/Orange_Checkmark.svg");
+     background-repeat: no-repeat;
+     width: 18px;
+     height: 18px;
+     display: inline-block;
+     margin-bottom: -3px;
+     margin-right: 10px;
+ }
+
+ .list ul li {
+     margin-right: 20px;
+ }
+
+ .pf-text p {
+     position: relative;
+ }
+
+ .pf-text p::after {
+     content: "";
+     position: absolute;
+     height: 5px;
+     margin-left: 10px;
+     border-bottom: 1px solid #e0e6ed;
+     top: 3px;
+     width: 80%;
+ }
+
+ .card  {
+     width: 31.59%;
+     float:left;
+     background-color: white;
+     padding: 20px;
+ }
+
+ .card p {
+     text-align: left;
+ }
+
+ .card,.s-top {
+     border-radius: 5px;
+ }
+ .card.biz1,.card.biz2 {
+     margin-right: 25px;
+ }
+
+ .card h4 {
+     padding: 15px;
+ }
+
+ .card .list {
+     text-align: left;
+ }
+
+ .card a {
+     margin: 25px 0;
+ }
+
+  .fw-bizdata {
+      background-color: #00b4ae;
+  }
+
+  .section.bizdata {
+      text-align: center;
+      padding:80px 0;
+      color: white;
+  }
+
+  .sb-claim {
+      width: 750px;
+      margin: 0 auto;
+  }
+
+  .sb-claim p{
+      padding-top: 20px;
+      padding-bottom: 40px;
+
+  }
+
+  .cell {
+      width: 25%;
+      float: left;
+      padding: 20px 0;
+      border: 1px solid white;
+      position: relative;
+  }
+
+  .cell:nth-of-type(n+5) {
+      border-bottom: none;
+  }
+
+  .cell:nth-last-child(n+5) {
+      border-top: none;
+  }
+
+  .cell:nth-of-type(1n) {
+      border-left: none;
+  }
+
+  .cell:nth-of-type(4n) {
+      border-right: none;
+  }
+
+  .cell.plus h2:after {
+      content: "+";
+      font-size: 10px;
+      position: relative;
+      bottom: 5px;
+  }
+
+  .cell. h2 {
+      padding: 10px 0;
+  }
+
+  .sb2t-l {
+      width: 270px;
+      float: left;
+  }
+
+  .sb2t-l strong:nth-last-child(2) {
+      font-size: 45px;
+  }
+
+  .sb2t-l p {
+      font-size: 25px;
+      color: #33475b;
+      width: 285px;
+      line-height: 1.5;
+      padding-top: 10px;
+  }
+
+
+  .sb2t-r {
+      width: 600px;
+      float: right;
+  }
+
+  .logo-bar {
+      height: 60px;
+      line-height: 2;
+  }
+
+  .sb2t-r .logo {
+      float: left;
+      padding: 20px;
+  }
+
+  .sb2t-r .logo img {
+      width: 110px;
+  }
+
+  .section.bizdata2 {
+      padding-top: 100px;
+  }
+
+  .sb2-bottom {
+      padding-top:120px;
+      padding-bottom: 50px;
+
+  }
+
+  .sb2b-l {
+      width: 486px;
+      float: left;
+  }
+
+  .sb2b-l h2 {
+      padding-top: 50px;
+  }
+
+  .sb2b-l p {
+      padding: 20px 0;
+  }
+
+  .sb2b-l small,.sfbb-l small {
+      display: block;
+      padding-top: 24px;
+  }
+
+  .sb2b-r {
+      float: right;
+  }
+
+  .sb2br-img {
+      width: 350px;
+  }
+
+  .big {
+      font-size: 1rem;
+      padding: 1.625rem 3rem;
+      font-weight: 600;
+  }
+
+  footer {
+      background-color: #33475b;
+      color: lightgray;
+  }
+
+  .sft-list {
+      padding-top: 50px;
+  }
+
+  .sftl-card {
+      float: left;
+      width: 25%;
+  }
+
+  .sftl-card label {
+      font-weight: 600;
+      color: white;
+  }
+
+  .sftl-card ul li {
+      display: block;
+      line-height: 2;
+      font-size: 14px;
+  }
+
+  .sftl-card ul li .button {
+      color: black;
+      background-color: white;
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 5px 20px;
+      margin: 20px auto;
+      font-weight: bold;
+  }
+
+  .sftl-card ul li ul {
+      margin-bottom: 30px;
+  }
+
+  .sftl-card ul li ul li {
+      display: inline-block;
+      padding-right: 30px;
+  }
+
+  .sfb-top {
+      text-align: center;
+  }
+
+  .sfb-top ul li,.sfbb-r ul li {
+      display: inline-block;
+      padding-right: 20px;
+
+  }
+
+  .sfb-bottom {
+      border-top: 1px solid white;
+      margin-top: 30px;
+      padding-top: 30px;
+  }
+
+  .sfbb-l {
+      float: left;
+      width: 175px;
+  }
+
+  .sfbb-l small {
+      padding:5px 0 30px;
+      width: max-content;
+  }
+
+  .sfbb-r {
+      float: right;
+      width: 245px;
+  }
