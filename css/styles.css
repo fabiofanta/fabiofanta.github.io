@@ -10097,7 +10097,7 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/ilya-pavlov.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10105,6 +10105,7 @@ header.masthead {
 }
 header.masthead h1 {
   font-size: 2.25rem;
+  color: white;
 }
 @media (min-width: 992px) {
   header.masthead {
@@ -10128,11 +10129,13 @@ header.masthead h1 {
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl {
   max-width: 1920px;
+  margin: 72px 0;
+  background-color: black;
 }
 
 #portfolio .container-fluid .portfolio-box, #portfolio .container-sm .portfolio-box, #portfolio .container-md .portfolio-box, #portfolio .container-lg .portfolio-box, #portfolio .container-xl .portfolio-box {
   position: relative;
-  display: block;
+  display: flex;
   height: 100%;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption, #portfolio .container-sm .portfolio-box .portfolio-box-caption, #portfolio .container-md .portfolio-box .portfolio-box-caption, #portfolio .container-lg .portfolio-box .portfolio-box-caption, #portfolio .container-xl .portfolio-box .portfolio-box-caption {
@@ -10144,6 +10147,7 @@ header.masthead h1 {
   height: 100%;
   position: absolute;
   bottom: 0;
+  left: 0;
   text-align: center;
   opacity: 0;
   color: #fff;
@@ -10168,15 +10172,14 @@ header.masthead h1 {
   color: rgba(255, 255, 255, 0.75);
 }
 
-.t-header {
+/* .t-header {
     height: 72px;
     background-color: black;
+} */
 
-}
-
-.portfolio-box img {
+/* .portfolio-box img {
     height: 100%;
-}
+} */
 
 .portfolio-box-text a {
     text-decoration: none;
